@@ -1696,13 +1696,48 @@ section {
 
 #footer .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: #050505;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
   text-align: left;
   border: 1px solid #bfdcf7;
+  color: white;
 }
+
+/* Hover del form para el Boton de Whatssapp */
+#footer .footer-newsletter form:hover {
+  margin-top: 30px;
+  background: #29a71a;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #bfdcf7;
+  transition: 0.4s;
+  box-shadow: 0 0 10px #73c76a;
+}
+/* Finaliza Hover del form para el Boton de Whatssapp */
+
+
+#footer .footer-newsletter form a{
+  color: white;
+  
+}
+
+
+/* Boton de Whatssapp */
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  margin-left: 4px;
+}
+.whatsapp-button span {
+  font-size: 16px;
+}
+/* Finaliza Boton de Whatssapp */
+
 
 #footer .footer-newsletter form input[type=email] {
   border: 0;
@@ -1710,7 +1745,7 @@ section {
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+/* #footer .footer-newsletter form input[type=submit] {
   position: absolute;
   top: 0;
   right: 0;
@@ -1723,11 +1758,8 @@ section {
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
-}
 
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #1c84e3;
-}
+} */
 
 #footer .credits {
   padding-top: 5px;
