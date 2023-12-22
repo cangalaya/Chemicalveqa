@@ -471,6 +471,11 @@ h6 {
 #hero .container {
   position: relative;
 }
+.container-two-blocks-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
 
 #hero h1 {
   margin: 0;
@@ -1466,6 +1471,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contactSpace{
+  margin: 0 2vw;
+}
 .contact .info {
   width: 100%;
   background: #fff;
