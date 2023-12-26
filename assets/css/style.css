@@ -1471,6 +1471,220 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+/*Mi codigo*/
+
+@media (max-width:767px){
+  .container-two-blocks-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+}
+
+
+@media (min-width:767px){
+  .container-two-blocks-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #contenedor-info-formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #info{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+
+  }
+  #colum{
+    margin-top: 10px;
+    height: 90px;
+    background-color: rgb(255 255 255);
+  }
+  #colum p{
+    width: 100%;
+
+  }
+}
+
+
+@media (min-width:992px){
+  #container-two-blocks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 100vw;
+}
+  #mapa{
+    width: 50vw;
+  }
+  #contenedor-info-formulario{
+    display: grid;
+    margin: 10px 0px 0px 0px;
+    grid-template-columns: 1fr;
+    width: 50vw;
+    background-color: rgb(255 255 255);
+  }
+  #info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espaciado entre columnas */
+  width: 100%;
+  background-color: rgb(255 255 255);
+  }
+
+  .contact .info h4{
+    font-size: 18px;
+  }
+  #colum{
+    width: 120px;
+    margin-top: 10px;
+    height: 90px;
+    background-color: rgb(255 255 255);
+  }
+  #mapa{
+    margin-top: 48px;
+  }
+  .contact .php-email-form input{
+    width: 40vw;
+    height: 44px;
+    
+  }
+
+  .contact .php-email-form textarea{
+    width: 40vw;
+    height: 10vh;
+  }
+
+  .text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+
+#colum p .texto-autoscroll{
+
+  padding: 0px;
+}
+.email {
+  overflow: hidden;
+  white-space: nowrap; /* Evita que el texto se desplace a la siguiente línea */
+  width: 100px; /* Ancho del contenedor ajustable según tus necesidades */
+}
+
+
+/* Estilo para el texto dentro del contenedor */
+.texto-autoscroll {
+  display: inline-block;
+  animation: autoscroll 5s linear infinite; /* Ajusta la duración y velocidad según tus necesidades */
+}
+
+@keyframes autoscroll {
+  from {
+    transform: translateX(-40px);
+  }
+  to {
+    transform: translateX(-100%); /* Ajusta el porcentaje según el ancho de tu contenido */
+  }
+}
+/* Activar el autoscroll solo al hacer hover */
+.texto-autoscroll:hover {
+  animation-play-state: running;
+}
+
+/* Pausar el autoscroll al salir del hover */
+.texto-autoscroll:not(:hover) {
+  animation-play-state: paused;
+}
+
+}
+
+@media (min-width:1024px){
+  #container-two-blocks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 100vw;
+}
+  #mapa{
+    width: 50vw;
+  }
+  #contenedor-info-formulario{
+    display: grid;
+    margin: 10px 0px 0px 0px;
+    grid-template-columns: 1fr;
+    width: 50vw;
+    background-color: rgb(255 255 255);
+  }
+  #info{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 20px; /* Espaciado entre columnas */
+  background-color: rgb(255 255 255);
+  }
+
+  .contact .info h4{
+    font-size: 18px;
+  }
+  #colum{
+    width: auto;
+    margin-top: 10px;
+    height: 90px;
+    background-color: rgb(196, 82, 82);
+    
+
+  }
+  #info{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    width: 40vw;
+
+  }
+  #colum{
+    margin-top: 10px;
+    height: 90px;
+    background-color: rgb(255 255 255);
+    width: 11vw;
+  }
+  #colum p{
+    width: 100%;
+
+  }
+
+
+
+  #mapa{
+    margin-top: 48px;
+  }
+  .contact .php-email-form input{
+    width: 40vw;
+    height: 44px;
+    
+  }
+
+  .contact .php-email-form textarea{
+    width: 40vw;
+    height: 10vh;
+  }
+  .text-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40vw;
+  }
+  
+
+
+}
+
+
+
+
+
 .contactSpace{
   margin: 0 2vw;
 }
