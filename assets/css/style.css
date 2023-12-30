@@ -33,6 +33,26 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+.form-container{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+
+}
+
+.cuadricula{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items:center;
+  justify-content: center;
+}
+.cuadricula-text{
+  padding-left: 4px!important;
+}
+.cuadricula-formulario{
+  padding: 0!important;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -466,6 +486,12 @@ h6 {
   background: url("../img/portada-1.jpg") top center;
   background-size: cover;
   margin-bottom: -200px;
+}
+
+.container-de-contactos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #hero .container {
@@ -1496,7 +1522,7 @@ section {
   #info{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
-
+    padding: 0!important;
   }
   #colum{
     margin-top: 10px;
@@ -1545,7 +1571,7 @@ section {
     background-color: rgb(255 255 255);
   }
   #mapa{
-    margin-top: 48px;
+    
   }
   .contact .php-email-form input{
     width: 40vw;
@@ -1615,7 +1641,7 @@ section {
   }
   #contenedor-info-formulario{
     display: grid;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     grid-template-columns: 1fr;
     width: 50vw;
     background-color: rgb(255 255 255);
@@ -1657,9 +1683,6 @@ section {
 
 
 
-  #mapa{
-    margin-top: 48px;
-  }
   .contact .php-email-form input{
     width: 40vw;
     height: 44px;
