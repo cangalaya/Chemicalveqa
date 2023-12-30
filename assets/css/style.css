@@ -1656,7 +1656,7 @@ section {
   .contact .info h4{
     font-size: 18px;
   }
-  #colum{
+  .colum{
     width: auto;
     margin-top: 10px;
     height: 90px;
@@ -1670,13 +1670,13 @@ section {
     width: 40vw;
 
   }
-  #colum{
+  .colum{
     margin-top: 10px;
     height: 90px;
     background-color: rgb(255 255 255);
     width: 11vw;
   }
-  #colum p{
+  .colum p{
     width: 100%;
 
   }
@@ -1745,10 +1745,10 @@ section {
   color: #4b7dab;
 }
 
-.contact .info .email,
+/* .contact .info .email,
 .contact .info .phone {
   margin-top: 40px;
-}
+} */
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
