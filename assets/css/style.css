@@ -1605,8 +1605,8 @@ section {
 
 /* Estilo para el texto dentro del contenedor */
 .texto-autoscroll {
-  display: inline-block;
-  animation: autoscroll 5s linear infinite; /* Ajusta la duración y velocidad según tus necesidades */
+  display:block;
+  animation: autoscroll 5s linear infinite ; /* Ajusta la duración y velocidad según tus necesidades */
 }
 
 @keyframes autoscroll {
