@@ -41,10 +41,10 @@ h6 {
 }
 
 .cuadricula{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items:center;
-  justify-content: center;
+  display: grid!important;
+  grid-template-columns: 1fr 2fr!important;
+  align-items:center!important;
+  justify-content: center!important;
 }
 .cuadricula-text{
   padding-left: 4px!important;
