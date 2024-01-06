@@ -1570,9 +1570,6 @@ section {
     height: 90px;
     background-color: rgb(255 255 255);
   }
-  #mapa{
-    
-  }
   .contact .php-email-form input{
     width: 40vw;
     height: 44px;
@@ -1596,36 +1593,7 @@ section {
 
   padding: 0px;
 }
-.email {
-  overflow: hidden;
-  white-space: nowrap; /* Evita que el texto se desplace a la siguiente línea */
-  width: 100px; /* Ancho del contenedor ajustable según tus necesidades */
-}
 
-
-/* Estilo para el texto dentro del contenedor */
-.texto-autoscroll {
-  display:block;
-  animation: autoscroll 5s linear infinite ; /* Ajusta la duración y velocidad según tus necesidades */
-}
-
-@keyframes autoscroll {
-  from {
-    transform: translateX(-40px);
-  }
-  to {
-    transform: translateX(-100%); /* Ajusta el porcentaje según el ancho de tu contenido */
-  }
-}
-/* Activar el autoscroll solo al hacer hover */
-.texto-autoscroll:hover {
-  animation-play-state: running;
-}
-
-/* Pausar el autoscroll al salir del hover */
-.texto-autoscroll:not(:hover) {
-  animation-play-state: paused;
-}
 
 }
 
@@ -1699,8 +1667,16 @@ section {
       align-items: center;
       width: 40vw;
   }
-  
 
+  .cuadricula-text{
+    overflow: hidden;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  .cuadricula-info{
+    width: 120px;
+    object-fit: contain;
+  }
 
 }
 
