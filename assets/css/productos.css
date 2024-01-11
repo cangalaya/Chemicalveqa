@@ -1,0 +1,298 @@
+.contenedor-principal{
+    margin-top: 119px;
+}
+
+
+
+.contenedor-titulo-tarjetas{
+    max-width: 1320px;
+    margin: auto;/* para que se centre todo el conenedor al centro */
+    padding: 12px; 
+    /* para que este al mismo linea que Chemivelca */
+}
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows:auto ;
+    gap: 1em;
+}
+.tarjeta{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius:5%;
+    border: 3px solid;
+    border-color: black;
+    background:rgb(253, 252, 252);
+    padding: 1.5em;
+    gap: 0.5em;
+    
+}
+
+.tarjeta > img{
+    justify-content: center;
+    max-width: 6vw;
+    margin: auto;
+}
+.tarjeta > h4{
+    font-family: 'Poppins'; 
+    margin: auto;
+    margin-bottom: 5px;
+}
+.tarjeta > h5{
+    margin-bottom: 0px;
+}
+
+
+
+/*** ESTILOS BOTÓN SLIDE TOP ***/
+.ov-btn-slide-top {
+    background: #c4c4c9; /* color de fondo */
+    color: black; /* color de fuente */
+    border: 2px solid #c4c4c9; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    margin:auto;
+  }
+  .ov-btn-slide-top:hover {
+    color: #faf8f8; /* color de fuente hover */
+  }
+  .ov-btn-slide-top::after {
+    content: "";
+    background: #080808; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .ov-btn-slide-top:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+.tarjeta > p{
+    margin-bottom: 0px;
+}
+
+
+
+
+/* CELULAR */
+
+@media (min-width:320px){
+
+.contenedor-titulo-tarjetas{
+    max-width: 540px;
+    margin: auto;/* para que se centre todo el conenedor al centro */
+    padding: 12px; /* para que este al mismo linea que Chemivelca */
+}
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto ;
+    gap: 1em;
+    
+}
+
+
+.tarjeta{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 250px;
+    border-radius:5%;
+    border: 3px solid;
+    border-color: black;
+    background:rgb(253, 252, 252);
+    padding: 1em;
+    gap: 0.5em;
+    margin: auto;
+    
+}
+
+.tarjeta > img{
+    justify-content: center;
+    max-width: 16vw;
+    margin: auto;
+}
+}
+
+@media (min-width:650px){
+
+    .contenedor-titulo-tarjetas{
+        max-width: 540px;
+        margin: auto;/* para que se centre todo el conenedor al centro */
+        padding: 12px; /* para que este al mismo linea que Chemivelca */
+    }
+    .contenedor-tarjetas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:auto ;
+        gap: 1em;
+        
+    }
+    
+    
+    .tarjeta{
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 200px;
+        border-radius:5%;
+        border: 3px solid;
+        border-color: black;
+        background:rgb(253, 252, 252);
+        padding: 1em;
+        gap: 0.5em;
+        margin: auto;
+        
+    }
+    
+
+    .tarjeta > h4{
+        font-family: 'Poppins'; 
+        margin: auto;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .tarjeta > img{
+        justify-content: center;
+        max-width: 6vw;
+        margin: auto;
+    }
+    
+}
+
+/* TABLET */
+ @media (min-width:768px){
+
+        .contenedor-titulo-tarjetas{
+            max-width: 720px;
+            margin: auto;/* para que se centre todo el conenedor al centro */
+            padding: 12px; /* para que este al mismo linea que Chemivelca */
+        }
+        .contenedor-tarjetas{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:auto ;
+            gap: 1em;
+            
+        }
+        
+        
+        .tarjeta{
+            font-size: 12px;
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 200px;
+            border-radius:5%;
+            border: 3px solid;
+            border-color: black;
+            background:rgb(253, 252, 252);
+            padding: 1em;
+            gap: 0.5em;
+            margin: auto;
+            
+        }
+        
+
+        .tarjeta > h4{
+            font-family: 'Poppins'; 
+            margin: auto;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+}
+/* LAPTOP */
+@media (min-width:1023px){
+
+            .contenedor-titulo-tarjetas{
+                max-width: 960px;
+                margin: auto;/* para que se centre todo el conenedor al centro */
+                padding: 12px; /* para que este al mismo linea que Chemivelca */
+            }
+            .contenedor-tarjetas{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows:auto ;
+                gap: 1em;
+                
+            }
+            
+            
+            .tarjeta{
+                font-size: 12px;
+                display: grid;
+                grid-template-columns: 1fr;
+                width: 200px;
+                border-radius:5%;
+                border: 3px solid;
+                border-color: black;
+                background:rgb(253, 252, 252);
+                padding: 1em;
+                gap: 0.5em;
+                margin: auto;
+                
+            }
+            
+    
+            .tarjeta > h4{
+                font-family: 'Poppins'; 
+                margin: auto;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+}
+
+/* DESKOTP */
+@media (min-width:1400px){
+
+                .contenedor-titulo-tarjetas{
+                    max-width: 1320px;
+                    margin: auto;/* para que se centre todo el conenedor al centro */
+                    padding: 12px; /* para que este al mismo linea que Chemivelca */
+                }
+                .contenedor-tarjetas{
+                    display: grid;
+                    grid-template-columns: repeat(5,1fr);
+                    grid-template-rows:auto ;
+                    gap: 1em;
+                    
+                }
+                
+                
+                .tarjeta{
+                    font-size: 12px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    width: 200px;
+                    border-radius:5%;
+                    border: 3px solid;
+                    border-color: black;
+                    background:rgb(253, 252, 252);
+                    padding: 1em;
+                    gap: 0.5em;
+                    margin: auto;
+                    
+                }
+                
+        
+                .tarjeta > h4{
+                    font-family: 'Poppins'; 
+                    margin: auto;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+}
