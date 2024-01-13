@@ -10,6 +10,7 @@
     padding: 12px; 
     /* para que este al mismo linea que Chemivelca */
 }
+
 .contenedor-tarjetas{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -39,6 +40,10 @@
     margin-bottom: 5px;
 }
 .tarjeta > h5{
+    margin-bottom: 0px;
+}
+
+.tarjeta > p{
     margin-bottom: 0px;
 }
 
@@ -83,8 +88,9 @@
     transition: all 0.35s;
   }
 
-.tarjeta > p{
-    margin-bottom: 0px;
+
+#seccion-a #seccion-b{
+    display: none;
 }
 
 
@@ -185,7 +191,7 @@
         }
         .contenedor-tarjetas{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);    /* CAMBIE*/
             grid-template-rows:auto ;
             gap: 1em;
             
@@ -204,6 +210,7 @@
             padding: 1em;
             gap: 0.5em;
             margin: auto;
+            height: 310px;
             
         }
         
@@ -214,6 +221,35 @@
             margin-bottom: 5px;
             text-align: center;
         }
+
+/* ESTILOS AÑADIDOS ABECEDARIO */
+
+        .contenedor-abecedario-tarjetas{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);   /* SIEMPRE SERAN 2 */
+            max-width: 720px;
+            gap: 1em;
+        }
+        .abecedario{
+            max-width: 264px; 
+        }
+
+
+
+/* ABECEDARIO */
+.contenedor-letras{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.letras{
+    padding: 1em;
+    border: 1px solid;
+    border-color: rgb(41, 127, 130);
+    background-color: cadetblue;
+}
+
+
 }
 /* LAPTOP */
 @media (min-width:1023px){
@@ -225,7 +261,7 @@
             }
             .contenedor-tarjetas{
                 display: grid;
-                grid-template-columns: repeat(4,1fr);
+                grid-template-columns: repeat(3,1fr);
                 grid-template-rows:auto ;
                 gap: 1em;
                 
@@ -236,7 +272,7 @@
                 font-size: 12px;
                 display: grid;
                 grid-template-columns: 1fr;
-                width: 200px;
+                width: 240px;
                 border-radius:5%;
                 border: 3px solid;
                 border-color: black;
@@ -244,6 +280,7 @@
                 padding: 1em;
                 gap: 0.5em;
                 margin: auto;
+                height: 330px;
                 
             }
             
@@ -254,6 +291,26 @@
                 margin-bottom: 5px;
                 text-align: center;
             }
+
+
+
+
+/* ESTILOS AÑADIDOS ABECEDARIO */
+
+.contenedor-abecedario-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   /* SIEMPRE SERAN 2 */
+    max-width: 960px;
+    gap: 1em;
+}
+.abecedario{
+    max-width: 202px; 
+}
+
+
+
+
+            
 }
 
 /* DESKOTP */
@@ -266,7 +323,7 @@
                 }
                 .contenedor-tarjetas{
                     display: grid;
-                    grid-template-columns: repeat(5,1fr);
+                    grid-template-columns: repeat(4,1fr);
                     grid-template-rows:auto ;
                     gap: 1em;
                     
@@ -277,7 +334,7 @@
                     font-size: 12px;
                     display: grid;
                     grid-template-columns: 1fr;
-                    width: 200px;
+                    width: 240px;
                     border-radius:5%;
                     border: 3px solid;
                     border-color: black;
@@ -285,6 +342,7 @@
                     padding: 1em;
                     gap: 0.5em;
                     margin: auto;
+                    height: 340px;
                     
                 }
                 
@@ -295,4 +353,17 @@
                     margin-bottom: 5px;
                     text-align: center;
                 }
+
+
+/* ESTILOS AÑADIDOS ABECEDARIO */
+
+.contenedor-abecedario-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);   /* SIEMPRE SERAN 2 */
+    max-width: 1320px;
+    gap: 1em;
+}
+.abecedario{
+    max-width: 296px; 
+}
 }
