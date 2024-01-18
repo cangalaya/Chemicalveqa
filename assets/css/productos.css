@@ -1,5 +1,5 @@
 .contenedor-principal{
-    margin-top: 119px;
+    margin-top: 106px;
 }
 
 
@@ -9,6 +9,7 @@
     margin: auto;/* para que se centre todo el conenedor al centro */
     padding: 12px; 
     /* para que este al mismo linea que Chemivelca */
+    font-family: 'Poppins';
 }
 
 .contenedor-tarjetas{
@@ -22,10 +23,11 @@
     grid-template-columns: 1fr;
     border-radius:5%;
     border: 3px solid;
-    border-color: black;
+    border-color: #49505791;
     background:rgb(253, 252, 252);
     padding: 1.5em;
     gap: 0.5em;
+    height: 100%;
     
 }
 
@@ -38,14 +40,32 @@
     font-family: 'Poppins'; 
     margin: auto;
     margin-bottom: 5px;
+    text-align: center;
 }
 .tarjeta > h5{
     margin-bottom: 0px;
+    font-size: 16px;
 }
 
 .tarjeta > p{
     margin-bottom: 0px;
+    font-size: 15px;
 }
+
+
+.titulo-tarjetas, h6,h5{
+    font-family: 'Poppins'; 
+}
+.contenedor-letras
+    
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
 
 
 
@@ -54,44 +74,25 @@
     background: #c4c4c9; /* color de fondo */
     color: black; /* color de fuente */
     border: 2px solid #c4c4c9; /* tamaño y color de borde */
-    padding: 16px 20px;
+    padding: 10px 15px;
     border-radius: 3px; /* redondear bordes */
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+    position: static; 
     display: inline-block;
     margin:auto;
+    font-size: 14px;
   }
   .ov-btn-slide-top:hover {
     color: #faf8f8; /* color de fuente hover */
-  }
-  .ov-btn-slide-top::after {
-    content: "";
-    background: #080808; /* color de fondo hover */
-    position: absolute;
-    z-index: -1;
-    padding: 16px 20px;
-    display: block;
-    left: 0;
-    right: 0;
-    top: -100%;
-    bottom: 100%;
+    background: black;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
   }
-  .ov-btn-slide-top:hover::after {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-  }
-
 
 #seccion-a #seccion-b{
     display: none;
 }
+
+
 
 
 
@@ -114,26 +115,73 @@
 }
 
 
+
 .tarjeta{
     display: grid;
     grid-template-columns: 1fr;
-    width: 250px;
+    width: 230px;
     border-radius:5%;
     border: 3px solid;
-    border-color: black;
+    border-color: #49505791;
     background:rgb(253, 252, 252);
     padding: 1em;
     gap: 0.5em;
     margin: auto;
+    height: 100%;
     
 }
 
 .tarjeta > img{
     justify-content: center;
-    max-width: 16vw;
+    max-width: 50px;
     margin: auto;
 }
+
+
+.contenedor-enunciado{
+    padding: 10px;
+    position: sticky;
+    top: 63px;
+    background: white;
+    width: 296px;
+    height: 122px;
+
 }
+.contenedor-letras{
+    flex-wrap: wrap;
+    position: sticky;
+    background: white;
+    top: 40px;
+}
+.titulo-tarjetas{
+    font-size: 23px;
+}
+
+
+
+.abecedario{
+    position: sticky;
+    background: white;
+    top: 185px;
+    width: 296px;
+}
+.letras{
+    background: #1977cc;
+    border-color: #1977cc;
+    color: white;
+}
+}
+@media (min-width:375px){
+    .abecedario,.contenedor-enunciado{
+        width: 351px;
+    }
+}
+@media (min-width:425px){
+    .abecedario,.contenedor-enunciado{
+        width: 401px;
+    }
+}
+
 
 @media (min-width:650px){
 
@@ -158,11 +206,12 @@
         width: 200px;
         border-radius:5%;
         border: 3px solid;
-        border-color: black;
+        border-color: #49505791;
         background:rgb(253, 252, 252);
         padding: 1em;
         gap: 0.5em;
         margin: auto;
+        height: 100%;
         
     }
     
@@ -175,10 +224,12 @@
     }
     .tarjeta > img{
         justify-content: center;
-        max-width: 6vw;
+        max-width: 50px;
         margin: auto;
     }
-    
+    .abecedario,.contenedor-enunciado{
+        width: 516px;
+    }
 }
 
 /* TABLET */
@@ -194,6 +245,8 @@
             grid-template-columns: repeat(2,1fr);    /* CAMBIE*/
             grid-template-rows:auto ;
             gap: 1em;
+            width: 460px;
+           
             
         }
         
@@ -202,15 +255,15 @@
             font-size: 12px;
             display: grid;
             grid-template-columns: 1fr;
-            width: 200px;
+            width: 222px; 
             border-radius:5%;
             border: 3px solid;
-            border-color: black;
+            border-color: #49505791;
             background:rgb(253, 252, 252);
             padding: 1em;
             gap: 0.5em;
             margin: auto;
-            height: 310px;
+            height: 100%;
             
         }
         
@@ -229,25 +282,49 @@
             grid-template-columns: repeat(2,1fr);   /* SIEMPRE SERAN 2 */
             max-width: 720px;
             gap: 1em;
-        }
-        .abecedario{
-            max-width: 264px; 
+            position: staticw;
         }
 
 
 
 /* ABECEDARIO */
+
+.abecedario{
+    max-width: 220px; 
+}
 .contenedor-letras{
     padding: 0px;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+    position: sticky;
+    top: 185px;
+    z-index: -1;
+
+    
 }
+
 .letras{
     padding: 1em;
     border: 1px solid;
-    border-color: rgb(41, 127, 130);
-    background-color: cadetblue;
+    border-color: rgb(248, 250, 250);
+    background-color: #1977cc;
+    color: white;
+    font-weight: bold;
+    top:78px;
 }
+
+.contenedor-enunciado{
+    padding: 10px;
+    background: white;
+    width: 696px;
+    height: 122px;
+    z-index: 1;
+
+
+}
+
 
 
 }
@@ -264,6 +341,7 @@
                 grid-template-columns: repeat(3,1fr);
                 grid-template-rows:auto ;
                 gap: 1em;
+                width: 718px;
                 
             }
             
@@ -272,15 +350,15 @@
                 font-size: 12px;
                 display: grid;
                 grid-template-columns: 1fr;
-                width: 240px;
+                width: 220px;
                 border-radius:5%;
                 border: 3px solid;
-                border-color: black;
+                border-color: #49505791;
                 background:rgb(253, 252, 252);
                 padding: 1em;
                 gap: 0.5em;
                 margin: auto;
-                height: 330px;
+                height: 100%;
                 
             }
             
@@ -291,7 +369,7 @@
                 margin-bottom: 5px;
                 text-align: center;
             }
-
+        
 
 
 
@@ -300,21 +378,38 @@
 .contenedor-abecedario-tarjetas{
     display: grid;
     grid-template-columns: repeat(2,1fr);   /* SIEMPRE SERAN 2 */
-    max-width: 960px;
+    max-width: 936px;
     gap: 1em;
 }
 .abecedario{
     max-width: 202px; 
+
 }
 
 
 
+.contenedor-enunciado{
+
+    width: 936px;
+    height: 122px;
+    z-index: 1;
+    top: 78px;
+
+
+}
+
+.contenedor-letras{
+
+    top: 200px;
+
+    
+}
 
             
 }
 
 /* DESKOTP */
-@media (min-width:1400px){
+@media (min-width:1440px){
 
                 .contenedor-titulo-tarjetas{
                     max-width: 1320px;
@@ -326,6 +421,7 @@
                     grid-template-columns: repeat(4,1fr);
                     grid-template-rows:auto ;
                     gap: 1em;
+                    width: 1024px;
                     
                 }
                 
@@ -337,12 +433,12 @@
                     width: 240px;
                     border-radius:5%;
                     border: 3px solid;
-                    border-color: black;
+                    border-color: #49505791;
                     background:rgb(253, 252, 252);
                     padding: 1em;
                     gap: 0.5em;
                     margin: auto;
-                    height: 340px;
+                    height: 100%;
                     
                 }
                 
@@ -360,10 +456,29 @@
 .contenedor-abecedario-tarjetas{
     display: grid;
     grid-template-columns: repeat(2,1fr);   /* SIEMPRE SERAN 2 */
-    max-width: 1320px;
+    max-width: 1296px;
     gap: 1em;
 }
+
+
 .abecedario{
-    max-width: 296px; 
+    max-width: 256px; 
+
+}
+
+.contenedor-enunciado{
+
+    width: 1296px;
+    height: 122px;
+    z-index: 1;
+    top: 78px;
+
+
+}
+
+.contenedor-letras{
+
+    top: 200px;
+
 }
 }
