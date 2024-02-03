@@ -70,6 +70,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
+            <img class="logo-header-chemicalveqa" src="./assets/img/SOLO_LOGO.png" alt="Logo-Chemicalveqa">
 
             <h1 class="logo me-auto"><a href="index.html">Chemicalveqa</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
@@ -77,32 +78,17 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="/index.html">Home</a></li>
-                    <li><a class="nav-link scrollto" href="/index.html#about">Nosotros</a></li>
-                    <li class="dropdown"><a href="/products.html"><span>Productos</span> <i
-                                class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Categoría 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Categoría 2</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Sub categoría 1</a></li>
-                                    <li><a href="#">Sub categoría 2</a></li>
-                                    <li><a href="#">Sub categoría 3</a></li>
-                                    <li><a href="#">Sub categoría 4</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Categoría 3</a></li>
-                            <li><a href="#">Categoría 4</a></li>
-                            <li><a href="#">Categoría 5</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link scrollto" href="/index.html#gallery">Galería</a></li>
+                    <li><a id="enlaceHome" class="nav-link scrollto" href="index.html">Home</a></li>
+                    <li><a id="enlaceNosotros" class="nav-link scrollto" href="index.html#about">Nosotros</a></li>
+                    
+                    <li><a class="nav-link scrollto active" href="products.html">Productos</a></li>
+                    
+                    <li><a id="enlaceGaleria" class="nav-link scrollto" href="index.html#gallery">Galería</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
-            <a href="/index.html#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Solicita una
+            <a href="index.html#contact" class="appointment-btn scrollto"><span class="d-none d-md-inline">Solicita una
                 </span>Cotización</a>
 
         </div>
@@ -120,8 +106,8 @@
                 <div class="abecedario">
                     <section class="contenedor-letras">
 
-                        <button type="button" onclick=""class="letras">A</button>
-                        <button type="button" onclick="mostrarB()" class="letras">B</button>
+                        <button type="button" onclick=""class="letras" href="#letra-a">A</button>
+                        <button type="button" class="letras" href="#letra-b">B</button>
                         <button type="button" onclick="" class="letras">C</button>
                         <button type="button"class="letras">E</button>
                         <button type="button"class="letras">G</button>
@@ -138,7 +124,7 @@
                 <div class="contenedor-para-tarjetas">
                     <div id="todos" class="contenedor-tarjetas">
         
-                        <div id="1" class="tarjeta">
+                        <div id="letra-a" class="tarjeta">
                             <h4>Aceite de Coco</h4>
                             <img src="assets/img/bicarbonato.png" alt="">
                             <h5>Descripcion</h5>
@@ -210,7 +196,7 @@
                             <a href="https://wa.me/51946560460?text=Hola,%20deseo%20solicitar%20una%20cotización"
                             class="ov-btn-slide-top" target="_blank">COTIZAR</a>
                         </div>
-                        <div id="10" class="tarjeta">
+                        <div id="letra-b" class="tarjeta">
                             <h4>Betaína</h4>
                             <img src="assets/img/bicarbonato.png" alt="">
                             <h5>Descripcion</h5>
@@ -646,13 +632,12 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Menú</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#about">Nosotros</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a id="enlaceHome" href="index.html#hero">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a id="enlaceNosotros" href="index.html#about">Nosotros</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#products">Productos</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contáctanos</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#appointment">Solicita una cotización</a>
-                            </li>
-                        </ul>
+                            <li><i class="bx bx-chevron-right"></i> <a id="enlaceGaleria" href="index.html#gallery">Galería</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html#contact">Contáctanos</a></li>
+                          </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
@@ -721,6 +706,11 @@
     <!-- Template Main JS File -->
     <script src="assets/js/productos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/nosotros.js"></script>
+    <script src="assets/js/galeria.js"></script>
+    
+    
+
 </body>
 
 </html>
