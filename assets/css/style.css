@@ -33,26 +33,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-
-.form-container{
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-
-}
-
-.cuadricula{
-  display: grid!important;
-  grid-template-columns: 1fr 2fr!important;
-  align-items:center!important;
-  justify-content: center!important;
-}
-.cuadricula-text{
-  padding-left: 4px!important;
-}
-.cuadricula-formulario{
-  padding: 0!important;
-}
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -213,12 +193,6 @@ h6 {
   max-height: 40px;
 }
 
-#header .logo-header-chemicalveqa{
-  display: none;
-  width: 46px;
-}
-
-
 /**
 * Appointment Button *
 */
@@ -239,20 +213,7 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 375px) {
-  #header .logo-header-chemicalveqa{
-    display: flex;
-    width: 46px;
-  }
-  #header .logo a {
-    display: none;
-}
-}
-
-
-
 @media (max-width: 768px) {
-
   .appointment-btn {
     margin: 0 15px 0 0;
     padding: 6px 18px;
@@ -507,12 +468,6 @@ h6 {
   margin-bottom: -200px;
 }
 
-.container-de-contactos{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 #hero .container {
   position: relative;
 }
@@ -716,6 +671,8 @@ section {
   background: #1977cc;
   border-radius: 4px;
   color: #fff;
+  box-shadow: 0px 2px 20px rgb(30 30 30 / 45%);
+  margin-bottom: 30px;
 }
 
 .why-us .content h3 {
@@ -753,6 +710,13 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
   width: 100%;
+  margin-bottom: 30px;
+}
+
+.presentacion{
+  align-items: flex-start;
+
+
 }
 
 .why-us .icon-boxes .icon-box i {
@@ -771,6 +735,27 @@ section {
   font-size: 15px;
   color: #848484;
 }
+
+
+@media (min-width: 992px) {
+  
+.why-us .content {
+  width: 300px;
+}
+}
+@media (min-width: 1200px) {
+  
+  .why-us .content {
+    width: 380px;
+  }
+  }
+
+@media (min-width: 1440px) {
+  
+  .why-us .content {
+    width: 440px;
+  }
+  }
 
 /*--------------------------------------------------------------
 # About
@@ -1516,7 +1501,6 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
 /*Mi codigo*/
 
 @media (max-width:767px){
@@ -1541,7 +1525,7 @@ section {
   #info{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
-    padding: 0!important;
+
   }
   #colum{
     margin-top: 10px;
@@ -1589,6 +1573,9 @@ section {
     height: 90px;
     background-color: rgb(255 255 255);
   }
+  #mapa{
+    margin-top: 48px;
+  }
   .contact .php-email-form input{
     width: 40vw;
     height: 44px;
@@ -1604,7 +1591,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: auto;
 }
 
 
@@ -1612,7 +1599,36 @@ section {
 
   padding: 0px;
 }
+.email {
+  overflow: hidden;
+  white-space: nowrap; /* Evita que el texto se desplace a la siguiente línea */
+  width: 100px; /* Ancho del contenedor ajustable según tus necesidades */
+}
 
+
+/* Estilo para el texto dentro del contenedor */
+.texto-autoscroll {
+  display: inline-block;
+  animation: autoscroll 5s linear infinite; /* Ajusta la duración y velocidad según tus necesidades */
+}
+
+@keyframes autoscroll {
+  from {
+    transform: translateX(-40px);
+  }
+  to {
+    transform: translateX(-100%); /* Ajusta el porcentaje según el ancho de tu contenido */
+  }
+}
+/* Activar el autoscroll solo al hacer hover */
+.texto-autoscroll:hover {
+  animation-play-state: running;
+}
+
+/* Pausar el autoscroll al salir del hover */
+.texto-autoscroll:not(:hover) {
+  animation-play-state: paused;
+}
 
 }
 
@@ -1628,7 +1644,7 @@ section {
   }
   #contenedor-info-formulario{
     display: grid;
-    margin: 0px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     grid-template-columns: 1fr;
     width: 50vw;
     background-color: rgb(255 255 255);
@@ -1643,7 +1659,7 @@ section {
   .contact .info h4{
     font-size: 18px;
   }
-  .colum{
+  #colum{
     width: auto;
     margin-top: 10px;
     height: 90px;
@@ -1657,19 +1673,22 @@ section {
     width: 40vw;
 
   }
-  .colum{
+  #colum{
     margin-top: 10px;
     height: 90px;
     background-color: rgb(255 255 255);
     width: 11vw;
   }
-  .colum p{
+  #colum p{
     width: 100%;
 
   }
 
 
 
+  #mapa{
+    margin-top: 48px;
+  }
   .contact .php-email-form input{
     width: 40vw;
     height: 44px;
@@ -1684,20 +1703,16 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 40vw;
   }
+  
 
-  .cuadricula-text{
-    overflow: hidden;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-  .cuadricula-info{
-    width: 120px;
-    object-fit: contain;
-  }
 
 }
+
+
+
+
+
 
 
 
@@ -1726,24 +1741,24 @@ section {
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
+  padding: 0 0 0 50px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #2c4964;
 }
 
 .contact .info p {
-  padding: 0 0 0 60px;
+  padding: 0 0 0 50px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #4b7dab;
 }
 
-/* .contact .info .email,
+.contact .info .email,
 .contact .info .phone {
   margin-top: 40px;
-} */
+}
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
